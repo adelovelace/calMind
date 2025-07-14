@@ -1,0 +1,63 @@
+.custom-bg {
+    --background: #2A7B78;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #F7FFF7;
+    margin-bottom: 2em;
+}
+
+ion-item {
+    --background: transparent;
+}
+
+.feelings-list {
+    width: 100%;
+    max-width: 200px;
+    background: #2A7B78;
+}
+
+.feeling-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    /* small spacing only */
+}
+
+.no-gap-radio {
+    margin: 0;
+    padding: 0;
+    --padding-start: 0px;
+    --inner-padding-end: 0px;
+    --margin-end: 0px;
+    --color-checked: #F7FFF7;
+    --border-color-checked: #F7FFF7;
+    --color: #F7FFF7;
+}
+
+.emoji {
+    font-size: 1.5em;
+}
+
+.feeling-name {
+    font-size: 1.1em;
+    color: white;
+}
+
+.continue-btn {
+    margin-top: 3em;
+    --background: #FBB6B6;
+    --color: #F7FFF7;
+    --font-weight: bold;
+}

@@ -1,0 +1,119 @@
+.custom-bg {
+  --background: #2A7B78;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #F7FFF7;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+ion-grid {
+  margin-top: 20px;
+  color: #F7FFF7;
+}
+
+ion-row {
+  display: flex;
+  justify-content: center;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ion-button {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F7FFF7 !important;           /* Letters are white */
+  background-color: transparent;
+  padding: 0;
+  margin: 2px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+ion-button:focus {
+  outline: none;
+}
+
+
+ion-button[style*='background-color: lightgreen'] {
+  background-color: #FBB6B6 !important;
+  color: #F7FFF7 !important;           /* #2A7B78 */
+}
+
+.words-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.word-item {
+  // background-color: rgba(255, 255, 255, 0.1);
+  color: #F7FFF7;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.word-found {
+  // background-color: lightgreen !important;
+  // color: #2A7B78 !important;
+  color: #FBA3A3 !important;
+}
+
+
+ion-button.action-btn {
+  margin-top: 20px;
+  width: 180px;
+  align-self: center;
+}
+
+ion-button.action-btn:hover {
+  background-color: #FBA3A3 !important;
+  color: white !important;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Responsive for Mobile Devices */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8em;
+  }
+
+  ion-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .words-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.div-continueBtn{
+  display: flex;
+  justify-content: center;
+}
+
+.continue-btn {
+    margin-top: 3em;
+    --background: #FBB6B6;
+    --color: #F7FFF7;
+    --font-weight: bold;
+    width: 8em;
+}

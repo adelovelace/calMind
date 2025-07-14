@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="container">
+    <p class="title">WordSearch</p>
+
+    <ion-grid>
+      <ion-row *ngFor="let row of board; let y = index">
+        <ion-col *ngFor="let letter of row; let x = index" size="1">
+          <ion-button fill="clear" [attr.data-x]="x" [attr.data-y]="y" (touchstart)="startSelection(x, y)"
+            (touchmove)="continueSelection($event)" (touchend)="endSelection()"
+            [style.backgroundColor]="isSelected(x, y) ? 'lightgreen' : 'transparent'">
+            {{ letter }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="words-grid">
+      <div *ngFor="let word of words" [class.word-found]="isWordFound(word)" class="word-item">
+        {{ word }}
+      </div>
+
+    </div>
+    <div class="div-continueBtn">
+      <ion-button class="continue-btn" (click)="goToPuzzle()">CONTINUE</ion-button>
+    </div>
+
+  </div>
+</ion-content>

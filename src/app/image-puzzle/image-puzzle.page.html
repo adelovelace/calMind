@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="container">
+    <p class="title">Puzzle</p>
+
+
+    <div class="div-puzzle">
+      <ion-segment [(ngModel)]="level" (ionChange)="changeLevel(level)">
+        <ion-segment-button value="beginner">
+          Principiante
+        </ion-segment-button>
+        <ion-segment-button value="intermediate">
+          Intermedio
+        </ion-segment-button>
+        <ion-segment-button value="advanced">
+          Avanzado
+        </ion-segment-button>
+      </ion-segment>
+
+      <h2>Nivel: {{ level | uppercase }}</h2>
+
+      <div class="puzzle-grid" [style.gridTemplateColumns]="'repeat(' + cols + ', 1fr)'"
+        [style.gridTemplateRows]="'repeat(' + rows + ', 1fr)'">
+        <div class="puzzle-piece" *ngFor="let piece of shuffledPieces; let i = index" [attr.data-id]="piece.id">
+          <img [src]="piece.image" (click)="swapPieces(i, (i + 1) % shuffledPieces.length)" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="div-resetContinue">
+      <ion-button class="reset-btn" (click)="shufflePieces()">RESET</ion-button>
+      <ion-button class="continue-btn" (click)="goToQuestion()">CONTINUE</ion-button>
+    </div>
+
+  </div>
+</ion-content>

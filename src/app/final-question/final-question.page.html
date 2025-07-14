@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="container">
+    <p class="title">Now... how do you feel?</p>
+    <ion-list class="feelings-list">
+      <ion-radio-group value="custom-checked" (ionChange)="selectFeeling($event)">
+        <ion-item *ngFor="let feeling of feelings;" lines="none">
+          <div class="feeling-row">
+            <ion-radio [value]="feeling" class="no-gap-radio"></ion-radio>
+            <span class="emoji">{{ feeling.emoji }}</span>
+            <span class="feeling-name">{{ feeling.name }}</span>
+          </div>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-button expand="block" class="continue-btn" (click)="goToImageSelectorPage()">
+      CONTINUE
+    </ion-button>
+  </div>
+</ion-content>

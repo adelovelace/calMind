@@ -1,0 +1,15 @@
+<ion-content class="custom-bg" fullscreen id="container">
+  <div class="splash-screen">
+    <img src="assets/icon/CalMindTransparent.png" alt="CalMind Logo" class="logo" />
+
+    <ion-spinner *ngIf="!showPhraseAndButton" name="crescent" color="light"></ion-spinner>
+
+    <div *ngIf="showPhraseAndButton" class="fade-in">
+      <p class="phrase">Find calm in every breath</p>  
+      <!-- Encuentra calma en cada respiración. -->
+        <ion-button expand="block" class="startBtn" (click)="goToMoodPickerPage()">
+          START
+        </ion-button>
+    </div>
+  </div>
+</ion-content>
