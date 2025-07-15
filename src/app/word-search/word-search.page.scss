@@ -69,8 +69,6 @@ ion-button[style*='background-color: lightgreen'] {
 }
 
 .word-found {
-  // background-color: lightgreen !important;
-  // color: #2A7B78 !important;
   color: #FBA3A3 !important;
 }
 
@@ -112,6 +110,7 @@ ion-button.action-btn:hover {
 
 .continue-btn {
     margin-top: 3em;
+    margin-bottom: 3em;
     --background: #FBB6B6;
     --color: #F7FFF7;
     --font-weight: bold;

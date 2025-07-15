@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'final-question',
     loadChildren: () => import('./final-question/final-question.module').then( m => m.FinalQuestionPageModule)
   },
+  {
+    path: 'statistics',
+    loadChildren: () => import('./statistics/statistics.module').then( m => m.StatisticsPageModule)
+  },
+  {
+    path: 'thanks',
+    loadChildren: () => import('./thanks/thanks.module').then( m => m.ThanksPageModule)
+  },
 ];
 
 @NgModule({

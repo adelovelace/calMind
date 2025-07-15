@@ -31,7 +31,7 @@ export class FinalQuestionPage implements OnInit {
   }
 
   goToImageSelectorPage() {
-    this.navCtrl.navigateForward("/home")
+    this.navCtrl.navigateForward("/statistics")
   }
 
 }

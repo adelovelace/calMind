@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="content">
+    <p class="title">Statistics</p>
+
+    <div class="feelings-info">
+      <p>Before: {{beforeEmoji}} {{ before }}</p>
+      <br>
+      <p>After: {{afterEmoji}} {{ after }}</p>
+    </div>
+
+    <div class="div-continueBtn">
+      <ion-button expand="block" class="continue-btn" (click)="goToThanks()">
+        CONTINUE
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

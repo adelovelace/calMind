@@ -1,0 +1,48 @@
+
+.custom-bg {
+    --background: #2A7B78; /* Background color */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: flex-start; /* Align items at the top of the screen */
+    height: 100vh;           /* Full screen height */
+    padding: 0 2em;          /* Padding for responsiveness */
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid */
+    text-align: center;
+    gap: 2em; /* Add some gap between elements */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #F7FFF7;
+}
+
+.feelings-info {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2-column grid for Before and After */
+    gap: 1em; /* Space between the Before and After sections */
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left; /* Align the text to the left */
+}
+
+.div-continueBtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: calc(100vh - 5em);
+
+}
+
+.continue-btn {
+    width: 8em; /* Set a fixed width for the button */
+    --background: #FBB6B6;
+    --color: #F7FFF7;
+    --font-weight: bold;
+    font-size: 1.2em;
+}
